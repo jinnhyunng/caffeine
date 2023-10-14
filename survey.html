@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>카페인 하루 섭취 설문조사</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+  <body>
+    <div id="container">    
+      <header>
+        <div id="logo">
+          <a href="onepageNew.html">
+            <h1>카페인 알려줘</h1>
+          </a>
+        </div>
+      </header>
+    </div>
+    <div id="empty">
+      <p></p>
+    </div>
+<div id="form">
+			<h2>카페인 하루 섭취 설문조사 </h2>
+		<p>하루에 카페인을 얼마나 섭취하시나요? 해당사항을 눌러주세요</p>
+			<form>
+        <fieldset>
+          <legend>성별</legend>
+          <input type="radio" name="woman" id="woman_y" value="woman_yes">
+          <label for="mailing_y">여자</label>
+          <input type="radio" name="woman" id="woman_n" value="woman_no" checked>
+          <label for="mailing_n">남자</label>  
+        </fieldset>
+        <fieldset>
+          <legend>직업</legend>
+          <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
+          <label for="mailing_y">고등학생</label>
+          <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked>
+          <label for="mailing_n">대학생</label>     
+          <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked>
+          <label for="mailing_n">직장인</label>  
+          <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked>
+          <label for="mailing_n">기타</label>  
+        </fieldset>
+      <fieldset>
+				<legend>카페인 종류</legend>
+				<ul>
+					<li>
+						<label><input type="radio" name="field" value="an"> 커피</label>
+					</li>
+					<li>
+						<label><input type="radio" name="field" value="pd"> 에너지 드링크</label>
+					</li>
+          <li>
+						<label><input type="radio" name="field" value="pd"> 피로회복제</label>
+					</li>
+					<li>
+						<label><input type="radio" name="field" value="eng"> 간식류(초콜릿, 콜라 등)</label>
+					</li>
+				</ul>
+      </fieldset>
+      <fieldset>
+        <legend>섭취량</legend>
+        <ul>
+          <li>
+            <label><input type="checkbox" value="s_3">커피 </label>
+            <input type="number" min="0" max="10">잔 (최대 10잔)
+          </li>
+          <li>
+            <label><input type="checkbox" value="s_5">그 외 음료,식품</label>
+            <input type="number" min="0" max="10">개 (최대 10개)
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <label>
+          <legend>의견</legend>
+          <textarea id="motive" cols="60" rows="5" placeholder="설문조사에 대해 의견이 있다면 남겨주세요!"></textarea>
+        </label>
+      </fieldset>
+				<div id="buttons">
+          <input type="button" value="제출하기" class="navyBtn" onClick="location.href='onepageNew.html'">
+          <input type="reset" value="다시하기">
+				</div>
+			</form>
+		</div>
+  </body>
+</html>

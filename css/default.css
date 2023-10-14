@@ -1,0 +1,12 @@
+/*자가 테스트 뒷배경*/
+
+
+body{
+  background-color: rgb(227, 168, 97);
+}
+
+
+/* 모든 것에 적용한다 */
+*{
+  font-family: 'Sunflower', sans-serif;
+}

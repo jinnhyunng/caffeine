@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>메뉴신청</title>
+    <link rel="stylesheet" href="css/applicationstyle.css">
+  </head>
+  <body>
+     <div id="container">    
+         <header>
+            <div id="logo">
+             <a href="onepageNew.html">
+               <h1>카페인 알려줘</h1>
+             </a>
+            </div>
+          </header>
+         <aside id="sidebar">
+            <img src="images/coffee2.png">
+            <br>
+            <h2>자주 드시는 음료가 있나요?</h2>
+            <h2>지금 그 메뉴를 신청해보세요!</h2>				
+         </aside>
+         <section id="contents">
+          <h2>메뉴 신청서</h2>
+          <form id="menuwant">
+            <fieldset>
+                <legend>연락처를 알려주세요</legend>
+                <br>
+                <label>이름 <input type="text" id="name" autofocus required></label>
+                <label>연락처 <input type="text" id="phone" placeholder="-없이 번호만 입력" required></label>
+                
+                <h4>메뉴가 업데이트되면 연락드릴 번호를 입력해주세요.</h4>
+              
+            </fieldset>
+            <fieldset>
+                <legend>메뉴를 알려주세요</legend>
+                <ul id="second">
+                <li><label>카페 상호명 <input type="text" id="cafename"></label></li>
+                <li><label>메뉴명 <input type="text" id="menuname"></label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend></legend>
+                <ul id="third">
+                <label for="memo">그 외의 음료 신청</label>
+                <textarea id="memo" cols="40" rows="3" placeholder="음료명을 정확하게 입력해주세요. 예) MONSTER ENERGY ZERO SUGAR"></textarea>
+                </ul>
+              </fieldset>
+            <div id="last">
+            <button type="submit" id="button1">신청하기</button>
+            </div>
+          </form>
+         </section>
+         <footer>
+          <p></p>
+         </footer>
+        </div>
+   </body>
+</html>

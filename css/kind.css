@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap');
+/*400*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR&display=swap');
+/*300*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Pen+Script&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Nanum+Gothic:wght@800&family=Noto+Sans+KR:wght@100&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Nanum+Gothic:wght@800&family=Noto+Sans+KR:wght@100;700&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{
+ 
+  width:100%;    /*  너비 */
+  height:105px;   /* 높이 */ 
+  background-color: rgb(151, 105, 49);
+  border: solid rgb(151, 105, 49);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:40%;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:50px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:30px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  
+  margin-right: 100px;
+  font-family:'Gugi', cursive;
+  font-weight:70px;
+  font-size:40px;   /* 글자 크기 */
+  color:rgb(255, 255, 255);   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  line-height: 105px;
+}
+
+
+#empty{
+  margin: 0 auto;
+  width: 1200px;
+  height: 60px;
+}
+
+/*로고 끝*/
+
+#container {
+  width:1000px;
+  margin:20px auto;
+}
+h1 {
+  text-align:center;
+}
+.prod-list {
+  list-style:none;
+  padding:0;
+}
+.prod-list li {
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.prod-list img {
+  margin:0;
+  padding:0;
+  float:left;
+  z-index:5;
+} 
+.prod-list .caption {
+  position: absolute;
+  top:200px;  /* 기준 위치보다 200px 아래로 */
+  width:300px;
+  height:200px;
+  padding-top:20px;
+  background:rgba(0,0,0,0.6);  /* 반투명한 검정 배경 */ 
+  opacity:0;  /* 화면에 보이지 않게 */ 
+  transition: all 0.6s ease-in-out;  /* 나타날 때 부드럽게 트랜지션 추가 */
+  z-index:10;  /* 다른 요소보다 위에 있도록 */ 
+}
+.prod-list li:hover .caption {
+  opacity: 1;  /* 설명글이 화면에 보이게 */ 
+  transform: translateY(-200px);  /* 설명글이 위로 200px 이동하게 */
+}  
+.prod-list .caption h2, .prod-list .caption p {
+  color: #fff;
+  text-align: center;
+}      
+ 
+img{
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+}
+h1{
+  font-family: 'Do Hyeon', sans-serif;
+  color:rgb(92, 75, 55);
+  font-size:35px;
+}
+
+/* 확인 버튼*/
+#b1 > button{
+  background-color: #f37c42;
+  width: 2.6cm;
+  height: 1.5cm;
+  border: 0;
+  border-radius: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 20px;   /* 글자 크기 */
+  color: rgb(0, 0, 0);
+  margin-top: 0px;
+  margin-left: 450px;
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+#b1 button:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+/* 드롭다운 메뉴 스타일 */
+select {
+  width:100px;
+  height:30px;
+}

@@ -1,0 +1,610 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap');
+/*400*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR&display=swap');
+/*300*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Pen+Script&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Nanum+Gothic:wght@800&family=Noto+Sans+KR:wght@100&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Nanum+Gothic:wght@800&family=Noto+Sans+KR:wght@100;700&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+*{
+    transition-duration: 0.8s;
+}
+body{
+margin: 0;
+padding: 0;
+overflow-x: hidden; overflow-y: auto;
+height: 100%;
+}
+
+html, body{
+    scroll-behavior: smooth; 
+}
+
+div{
+width: 100vw;
+height: 100vh; 
+}
+/**/
+
+
+a {
+    text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+  }
+  ul {
+    list-style: none;
+  }
+  
+  #container {
+    margin:0 auto;  /* 화면 중앙에 배치 */
+    width:100%   /* 너비 */
+  }
+  
+  /*********************************/
+  /* 헤더 영역 - 로고와 내비게이션 */
+  /*********************************/
+  
+  header{
+    width:100%;    /*  너비 */
+    height:90px;   /* 높이 */ 
+    background-color:rgb(151, 105, 49);
+    border: solid rgb(151, 105, 49);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+    justify-content: space-between;
+     align-items: center;
+  }
+  
+  /* 로고 */
+  #logo{ 
+    float:left;   /* 왼쪽으로 플로팅 */ 
+    width:40%;   /*  너비 */ 
+    height:100px;   /* 높이 */
+    line-height:50px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+    padding-left:30px;  /* 왼쪽에 여백 */
+  }
+  #logo h1 {
+    font-family:'Gugi', cursive;
+    font-weight:70px;
+    font-size:40px;   /* 글자 크기 */
+    color:#fff;   /* 글자 색*/
+    text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+    /* line-height: 105px; */
+  }
+  
+  /* 내비게이션 */
+  nav{  
+    float:left;   /* 오른쪽으로 플로팅 */  
+    height:100%;   /* 메뉴 영역 높이 */  
+    padding-top:16px;  /* 메뉴를 아래로 내리기 위해 */  
+  }
+ 
+  #topMenu > li {
+    float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+    position: relative;  /* 서브 메뉴를 absolute로 하기 위해, 이 부분을 relative로 */  
+  }
+  #topMenu > li > a{
+    display:block;  /* 링크 텍스트는 블록으로 */ 
+    color:#fff;  /* 글자 색 */
+    font-weight:500px;  /* 글자 굵기 */
+    text-shadow:0 1px rgb(105, 75, 56);  /* 그림자 추가 */
+    padding:20px 60px; /* 패딩 */ 
+   
+  }
+  #topMenu > li > a > span {
+    font-size : 0.5em;   /* 서브 메뉴가 있는 항목에 화살표 표시 */   
+  }
+  #topMenu > li > a:hover {
+    color:#000;  /* 마우스 오버하면 색상 바뀜 */ 
+    text-shadow:0 -1px rgb(89, 59, 25);  /* 글자가 너무 굵어지지 않도록 */
+  
+  }
+  
+  #topMenu > li > ul { /* 서브 메뉴 스타일 */
+    display: none;  /* 서브 메뉴 처음에는 화면에 안 보이게 */ 
+    position:absolute;  /* 서브 메뉴 포지셔닝 */ 
+    width:185px;
+    background:rgba(255,255,255,0.6);  /* 슬라이드 쇼 비치도록 배경 색 조절 */
+    left:20px;     
+    margin:0;
+    border: 0.5px solid rgba(255,255,255,0.6);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  #topMenu > li > ul > li {    
+    padding: 10px 2px 10px 30px;  /* 서브 메뉴 항목 */
+  }
+  #topMenu > li > ul > li > a { 
+    font-size:14px;   
+    color:#000;  
+   
+  
+  }
+  #topMenu > li:hover > ul {
+    display: block;  /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+    z-index:10;  /* 슬라이드 쇼에 가리지 않게 조절 */ 
+  }
+  #topMenu > li > ul > li > a:hover {
+    color:#f00;  /* 서브 메뉴 마우스 오버하면 색상 바뀜 */   
+  } 
+
+  #back{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/onecoffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+  padding: 10px;
+  animation: fadein 5s;
+ 
+  -webkit-animation: fadein 5s;
+  }
+
+#s1-1{
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 180px;
+  text-align: center;
+}
+
+
+
+#s1-1 > p{
+    
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size:30px;    /* 글자 크기 */
+    color:black;   /* 글자 색*/
+    text-align: center;
+    
+    
+  }
+
+#s1-1 > button{
+  margin-top: 300px;
+  
+  background-color: #f37c42;
+    width: 7.44cm;
+    height: 1.49cm;
+    border: 0;
+    border-radius: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:300;
+    font-size: 24px;   /* 글자 크기 */
+    color: rgb(0, 0, 0);
+    margin-top: 300px;
+}
+
+#s1-1 button:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+
+  
+#accent{
+  color: rgb(151, 105, 49);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:300;
+  font-size:40px;
+  text-align: center;
+}
+
+#accent{
+  display: inline-block;
+  animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+
+@-webkit-keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+/*2번째 화면*/
+
+
+#s2{
+  width: 100vw;
+  height: 100vh;
+    background-color: #efd5ba;
+    background: linear-gradient(to bottom, white, #efd5ba);
+    background-image: url("../images/caffeineproduct-3.jpg") ;
+    background-repeat: no-repeat;
+  
+   background-position: 90% 60%;
+}
+#s2-1{
+ 
+  float: left;
+ 
+  padding-top: 280px;
+  padding-left: 150px;
+}
+
+#s2-1 > h1{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size:50px;   /* 글자 크기 */
+    color: black;
+    
+}
+
+#s2-1 > ul{
+  list-style: none;
+}
+
+#s2-1 > ul > li{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size:25px;   /* 글자 크기 */
+  color: black;
+}
+
+#s2-2{
+  background-color: #f37c42;
+    width: 7.44cm;
+    height: 1.49cm;
+    border: 0;
+    border-radius: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size: 22px;   /* 글자 크기 */
+    color: rgb(0, 0, 0);
+}
+
+#s2-2:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+
+#s2-3{
+  margin-top: 20px;
+  background-color: #f37c42;
+    width: 9cm;
+    height: 1.49cm;
+    border: 0;
+    border-radius: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size: 22px;   /* 글자 크기 */
+    color: rgb(0, 0, 0);
+}
+
+#s2-3:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+
+/*s3*/
+
+#s3{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/adult-2.jpg") ;
+  background-repeat: no-repeat;
+  background-position: 650px 250px;
+}
+
+#s3-1{
+  width: 100vw;
+  height: 100vh;
+  padding-left: 150px;
+
+}
+
+#s3-1 > h1{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size:50px;   /* 글자 크기 */
+    color: black;
+    line-height: 20px;
+    
+}
+
+#s3-1 > p{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:300;
+    font-size:25px;   /* 글자 크기 */
+    color: black;
+    line-height: 15px;
+}
+
+/*버튼*/
+#s3-1 button:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+
+
+#muge{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size:30px;   /* 글자 크기 */
+    color: black;
+    line-height: 15px;
+}
+
+#s3-2{
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+
+#s3-2 > button{
+  
+    background-color: #f37c42;
+    width: 5.69cm;
+    height: 1.49cm;
+    border: 0;
+    border-radius: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size: 22px;   /* 글자 크기 */
+    color: rgb(0, 0, 0);
+  
+}
+
+
+
+
+
+/*s4*/
+
+
+
+/*s4*/
+
+
+
+#s4{
+  width: 100vw;
+  height: 100vh;
+}
+
+#s4-1{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 200px;
+  text-align: center;
+}
+
+#s4-1 > h1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size:50px;   /* 글자 크기 */
+  color: black;
+  line-height: 30px;
+  text-align: center;
+}
+
+#s4-1 > p{
+  
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size:25px;   /* 글자 크기 */
+    color: black;
+    line-height: 20px;
+    text-align: center;
+}
+
+#s4-1 > h3{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#kg{
+  background-color:#96c5d3;
+  width: 3.08cm;
+  height: 1.15cm;
+  border: 0; 
+}
+
+#result{
+  background-color: #f37c42;
+  width: 5.69cm;
+  height: 1.49cm;
+  border: 0;
+  border-radius: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 22px;   /* 글자 크기 */
+  color: rgb(0, 0, 0);
+}
+
+#s4-1 #result:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+
+
+
+
+
+
+
+
+
+/*s5*/
+
+
+#s5{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+}
+
+#s5-1{
+  width: 50vw;
+  height: 80vh;
+  background-image: url("../images/2phone.png");
+  background-repeat: no-repeat;
+  background-position: 30vw 180px;
+  float: left;
+}
+
+
+
+#s5-2{
+  width: 50vw;
+  height: 80vh;
+  background-image: url("../images/1phone.png");
+  background-repeat: no-repeat;
+  background-position-y: 180px;
+  float: right;
+  
+}
+
+#chat1 {
+  padding-top: 200px;
+  padding-left: 100px;
+}
+
+#chat2{
+  padding-top: 300px;
+  padding-right: 100px;
+}
+
+#chat3{
+  padding-top: 160px;
+  padding-left: 100px;
+}
+
+#chat4{
+  padding-left: 100px;
+  padding-top: 10px;
+}
+
+#appdown{
+  background-color: #f37c42;
+    width: 6cm;
+    height: 1.49cm;
+    border: 0;
+    border-radius: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    font-size: 22px;   /* 글자 크기 */
+    color: rgb(0, 0, 0);
+    display :inline-block;
+    margin-top: 30px;
+}
+
+#appdown:hover { 
+  background-color:#fff;  
+  color:#222;  
+}
+
+
+
+/*s6*/
+
+#s6{
+  width: 100vw;
+  height: 100vh;
+  
+ 
+}
+
+#s6-1{
+  width: 100vw;
+  height: 90vh;
+  padding-top: 170px;
+  overflow: hidden;
+}
+
+#all {
+  width: 14.58cm;
+  height: 12.43cm;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:700;
+  font-size:20px;   /* 글자 크기 */
+  color: black;
+  margin-left:auto;margin-right:auto;
+}
+
+td, th{
+  border: 1px solid black;
+  
+}
+
+td.c1:hover { background-color: #efd5ba; } 
+td.c2:hover { background-color: #efd5ba;}
+td.c3:hover { background-color: #efd5ba;}
+td.c4:hover { background-color: #efd5ba;}
+
+
+footer{
+  
+  width:100vw;   /* 너비 */
+  height:10vh;  /* 높이 */
+  border-top:2px solid #222;
+  position : relative;
+  transform : translateY(-100%);
+  overflow: hidden;
+}
+#bottomMenu{
+  width:100vw;
+  height:10vh;
+  position:relative; 
+ 
+}
+#bottomMenu ul {
+  margin-top:15px;  
+}
+#bottomMenu ul li{
+  float:left;  /* 가로로 배치 */ 
+  padding:5px 20px;
+  border-right:1px solid #ddd;   /* 항목 오른쪽에 테두리 */ 
+  font-size:15px;  /* 글자 크기 */ 
+  color:#666; 
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited {  
+  font-size:15px;  /* 글자 크기 */ 
+  color:#666;   /* 글자 색 */ 
+}
+#bottomMenu ul li:last-child{
+  border:none;  /* 마지막 항목에는 오른쪽 테두리 없음 */  
+}
+
+#sns ul li{
+  margin-top: 0;
+  border:none;  /* 테두리 없이 */
+  padding-left: 400px;   
+} 

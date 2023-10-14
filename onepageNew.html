@@ -1,0 +1,155 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카페인알려줘</title>
+  <link rel="stylesheet" href="css/onepageNew.css">
+</head>
+<body>
+  <div class="section" id="back">
+    <div id="container">    
+        <header>
+          <div id="logo">
+            <a href="onepageNew.html">
+              <h1>카페인 알려줘</h1>
+            </a>
+          </div>
+          <nav>
+            <ul id="topMenu">
+              <li><a href="#s2">카페인알기<span>▼</span></a>
+                <ul>
+                  <li><a href="bu.html">카페인부작용</a></li>
+                  <li><a href="caffeine.html">카페인의 모든 것</a></li>
+                </ul>
+              </li>
+              <li><a href="#s4">나의 권장량</a></li>
+              <li><a href="#s6">메뉴 보기</a></li>
+              <li><a href="download.html">앱다운로드</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+
+        <div id="s1-1">
+        <p><span id="accent">카페인,</span> 하루에 얼마나 섭취하는 지 알고 계신가요?</p>
+        <p><span id="accent">카페인,</span> 얼마나 위험한 지 알고 계신가요?</p>
+        <button onclick="location.href = 'caffeine.html'">카페인 알아보러 가기</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="section" id="s2">
+  <div id="s2-1">
+    <h1>두통약, 녹차, 초콜릿 등에도</h1>
+    <h1>카페인이 들어있습니다.</h1>
+    <ul>
+     <li><button id="s2-2" onclick="location.href = 'bu.html'">과다복용 알아보기</button></li>
+     <li><button id="s2-3" onclick="location.href = 'kind.html'">카페인이 포함된 제품 알아보기</button></li>
+    </ul>
+    
+  </div>
+  </div>
+
+  
+
+  <div class="section" id="s3">
+    <div id="s3-1">
+      <h1>성인 400mg</h1>
+      <h1>임산부 300mg</h1>
+      <h1>청소년 kg당 2.5mg</h1>
+      <br>
+      <p>그러나,</p>
+      <br>
+      <p>카페인 하루 섭취 권장량은</p>
+      <p><span id="muge">몸무게</span>에 따라 달라질 수 있습니다.</p>
+      <div id="s3-2">
+       <button onclick="location.href = '#s4'">확인하러 가기</button>
+      </div>
+    </div> 
+  </div>
+  
+ 
+      
+  
+  <div class="section" id="s4">
+    <div id="s4-1">
+      <h1>카페인 알려줘에서</h1>
+      <h1>나만의 하루 카페인 권장량을 확인해보세요</h1>
+      <br>
+      <h3>step1. 몸무게를 입력해주세요.</h3>
+      <p><input type="text"  id="kg" min="1">kg</p>
+      <h3>step2. 연령을 선택해주세요.</h3>
+      <input type="radio" name="choose" value="adult" checked>성인
+      <input type="radio" name="choose" value="teen">청소년
+      <h3>step3. 임신 여부를 선택해주세요.</h3>
+      <input type="radio" name="preg" value="Yes">임신
+      <input type="radio" name="preg" value="NO" checked >비임신
+      <br>
+      <br>
+      <br>
+      <input type="button" id="result" value="결과보기" onclick="caffeine()">
+    </div>
+
+  </div>
+
+
+  <div class="section" id="s5">
+    <div id="s5-1">
+      <img src="images/chat2.png" id="chat2">
+    </div>
+    <div id="s5-2">
+      <img src="images/chat1.png" id="chat1">
+      <img src="images/chat3.png" id="chat3">
+      <img src="images/chat4.png" id="chat4">
+    </div>
+    <button id="appdown" onclick="location.href = 'download.html'">어플 다운받으러 가기</button></li>
+  </div>
+  <div class="section" id="s6">
+    <div id="s6-1">
+      <table id="all">
+        <tr>
+          <td class="c1" onClick="location.href='augustbest.html'">8월의 추천메뉴 보러가기</td>
+          <td class="c2" onClick="location.href='survey.html'">카페인 설문조사 참여하기</td>
+        </tr>
+        <tr>
+          <td class="c3" onClick="location.href='application.html'">메뉴신청하러가기</td>
+          <td class="c4" onClick="location.href='index.html'">카페인 중독 테스트하기</td> 
+        </tr>
+      </table>
+    </div>
+    </div>
+   
+    <footer>    
+      <div id="bottomMenu">
+        <ul>
+          <li><a href="https://www.hanbat.ac.kr/kor/index.do">한밭대학교</a></li>
+          <li><a href="https://www.hanbat.ac.kr/infocomm/">정보통신공학과</a></li>
+          <li><a href="#">20201820</a></li>
+          <li><a href="#">20201830</a></li>
+          <li>대전광역시 유성구 동서대로 125</li>
+          <li>지도교수: 박종권 교수님</li>
+        </ul>
+        <div id="sns">
+          <ul>
+            <li></li>
+            <li><a href="https://www.hanbat.ac.kr/kor/index.do"><img src="images/logo3.jpg"></a></li>
+            
+          </ul>
+        </div>
+      </div>
+     
+    </footer>  
+
+  
+   
+    
+
+ 
+  
+  <script src="js/onepageNew.js"></script>
+
+
+ 
+</body>
+</html>

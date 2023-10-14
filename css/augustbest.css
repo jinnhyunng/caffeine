@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{
+  margin: 0%;
+  width:100%;    /*  너비 */
+  height:105px;   /* 높이 */ 
+  background-color: rgb(151, 105, 49);
+  border: solid rgb(151, 105, 49);
+}
+
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:1000px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:50px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:'Gugi', cursive;
+  font-weight:70px;
+  font-size:40px;   /* 글자 크기 */
+  color:rgb(255, 255, 255);   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  line-height: 105px;
+}
+
+
+#empty{
+  margin: 0 auto;
+  width: 1200px;
+  height: 60px;
+ 
+}
+#container{
+  width: 10000%;
+  max-width: 1900px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+h3{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h4{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size:35px;
+  color:rgb(92, 75, 55);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color:#fff;
+  font-size:16px;
+}
+#wrapper{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap:20px 20px;
+  background-color:#fff;
+
+}
+.card {
+  width: 95%;
+  margin: 10px 5px;
+  text-align: center;
+  display: grid;
+  background-color:#fff;
+  box-shadow:0px 1px 5px #222;
+}
+.card > header {
+  font-size:1.5rem;
+  padding:0.5rem;
+  background-color:#fff;
+  border: #fff;
+  margin: 0 auto;
+}
+.card > p {
+  padding:0.5rem;
+  line-height:1.6em;
+  background-color:#fff;
+}
+.card__img__box {
+  width:100%;
+}
+.card__img__box img {
+  max-width:100%;
+}
+
+#columns{
+  column-count: 4;
+}
+
+@media screen and (max-width: 1100px){
+  #columns{
+    column-count: 3;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px){
+  #columns{
+    column-count: 2;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #columns{
+    column-count: 1;
+    text-align: center;
+  }
+}
+
+
+
+

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Noto+Serif+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gugi&display=swap');
+
+
+#form { 
+  width:600px;
+  border:1px solid black;
+  padding:30px 50px;
+  margin:0 auto;
+}
+fieldset { margin-bottom:20px; }
+legend { font-weight:bold; }
+ul {list-style-type: none;}
+li { line-height:30px;}
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{
+  width:100%;    /*  너비 */
+  height:105px;   /* 높이 */ 
+  background-color: rgb(151, 105, 49);
+  border: solid rgb(151, 105, 49);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:400px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:30px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:'Gugi', cursive;
+  font-weight:70px;
+  font-size:40px;   /* 글자 크기 */
+  color:rgb(255, 255, 255);   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  line-height: 105px;
+}
+
+
+#empty{
+  margin: 0 auto;
+  width: 1200px;
+  height: 60px;
+}
+
+h2{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size:35px;
+  color:rgb(92, 75, 55);
+}

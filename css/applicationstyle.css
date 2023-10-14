@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Noto+Serif+KR&display=swap');
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+body{
+  overflow-y: hidden;
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{
+  width:100%;    /*  너비 */
+  height:105px;   /* 높이 */ 
+  background-color: rgb(151, 105, 49);
+  border: solid rgb(151, 105, 49);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:400px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:30px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:'Gugi', cursive;
+  font-weight:70px;
+  font-size:40px;   /* 글자 크기 */
+  color:rgb(255, 255, 255);   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  line-height: 105px;
+}
+
+#sidebar{
+    width:500px;  /* 사이드바의 너비 */
+    height:100vh;  /* 사이드바의 높이 */
+    background-color: white;
+    float:left;  /* 왼쪽으로 플로팅 */
+    padding-left: 30px;
+    padding-top: 230px;
+}
+
+#sidebar img{
+    float: left;
+}
+
+#sidebar h2{
+  font-family: 'Noto Sans KR', sans-serif;
+   font-weight:70px;
+   font-size:25px;
+   
+}
+
+#contents {
+    width:700px;  /* 본문의 너비 */
+    height:100vh;  /* 본문의 높이 */
+    background-color:#f7f7f7;
+    float:left;  /* 왼쪽으로 플로팅 */
+    padding-top: 120px;
+  }
+
+#contents h2{
+  font-family: 'Noto Sans KR', sans-serif;
+   font-weight:70px;
+   font-size:35px;
+   text-align: center;
+}
+
+#menuwant{
+    width: 550px;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 150px;
+    text-align: center;
+}
+
+legend{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:70px;
+    font-size:15px;
+}
+
+label{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:70px;
+    font-size:15px;
+}
+
+h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:70px;
+    font-size:15px;
+    color: rgb(96, 96, 96);
+}
+
+#second {
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight:70px;
+    font-size:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+ 
+#third{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#last{
+    padding-top: 15px;
+}
+
+#button1 {
+
+  background-color: #f37c42;
+  width: 4cm;
+  height: 1.49cm;
+  border: 0;
+  border-radius: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 24px;   /* 글자 크기 */
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+}
+
+#button1:hover { 
+  background-color:#fff;  
+  color:#222;  
+}

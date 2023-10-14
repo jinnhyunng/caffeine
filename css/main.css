@@ -1,0 +1,13 @@
+/*자가 테스트 글 부분*/
+
+
+#main{
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+p{
+  font-size: 20px;
+}
